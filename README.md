@@ -75,15 +75,6 @@ This is one of my first real-world projects, built to learn:
 - CSS custom properties & responsive design
 - Real-world data handling
 
-## 🚀 Future Improvements
-
-- [ ] Add more weather conditions (dust storms, tornadoes, etc.)
-- [ ] Implement geolocation — auto-detect user's city
-- [ ] Add a 5-day forecast feature
-- [ ] Sound effects for each weather type (rain sounds, wind, etc.)
-- [ ] Dark mode toggle
-- [ ] Save favorite cities
-
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
