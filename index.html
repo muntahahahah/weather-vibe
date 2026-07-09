@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Vibe 🌦️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    
+    <div class="container">
+        <div class="header">
+            <span class="logo-emoji">🌦️</span>
+            <h1>Weather Vibe</h1>
+            <p class="subtitle">search a city, feel its vibe</p>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="enter city name..." autocomplete="off">
+            <button id="searchBtn">✨</button>
+        </div>
+
+        <div id="locationBadge" class="location-badge hidden">
+            <span id="regionEmoji">🏳️</span>
+            <span id="regionName">Theme</span>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>finding the vibe...</p>
+        </div>
+
+        <div id="weatherDisplay" class="weather-card hidden">
+            <div class="card-top">
+                <div class="temp-section">
+                    <img id="weatherIcon" src="" alt="weather">
+                    <div class="temp-box">
+                        <p id="temperature">--°</p>
+                        <p id="description">--</p>
+                    </div>
+                </div>
+                <h2 id="cityName">City</h2>
+            </div>
+            
+            <div class="details">
+                <div class="detail-item">
+                    <span class="detail-icon">💧</span>
+                    <span id="humidity">--</span>
+                    <label>humidity</label>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">💨</span>
+                    <span id="windSpeed">--</span>
+                    <label>wind</label>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">🌡️</span>
+                    <span id="feelsLike">--°</span>
+                    <label>feels like</label>
+                </div>
+            </div>
+        </div>
+
+        <p id="errorMsg" class="error hidden">city not found! try again 💔</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
