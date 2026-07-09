@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="preview.png" alt="Weather Vibe Preview" width="100%">
+</p>
+
 # 🌦️ Weather Vibe
 
 A beautiful, anime-inspired weather app that changes its background based on real-time weather conditions!
