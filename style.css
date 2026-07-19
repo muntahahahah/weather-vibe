@@ -3,7 +3,7 @@
    ============================================ */
 
 :root {
-    --bg-image: url('images/clear-day.jpg');
+    --bg-image: url('/images/clear-day.jpg');
     --overlay: rgba(0, 0, 0, 0.2);
     --card-bg: rgba(255, 255, 255, 0.35);
     --card-border: rgba(255, 255, 255, 0.5);
@@ -39,7 +39,7 @@ body {
     padding: 1rem;
 }
 
-/* Overlay */
+/* Overlay - NO BLUR */
 .bg-overlay {
     position: fixed;
     top: 0;
@@ -331,6 +331,28 @@ h1 {
 }
 
 /* ============================================
+   WATERMARK - Simple & Clean!
+   ============================================ */
+
+.watermark {
+    position: fixed;
+    bottom: 12px;
+    right: 15px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+    z-index: 100;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
+}
+
+.watermark:hover {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================
    UTILITIES
    ============================================ */
 
@@ -368,7 +390,7 @@ h1 {
 }
 
 /* ============================================
-   📱 MOBILE RESPONSIVE
+   MOBILE RESPONSIVE
    ============================================ */
 
 @media (max-width: 480px) {
@@ -421,12 +443,11 @@ h1 {
         margin-bottom: 0.8rem;
     }
     
-    /* 🔥 NARROWER CARD WITH MARGIN */
     .weather-card {
         padding: 1.2rem 1rem;
         border-radius: 20px;
-        margin: 0 0.5rem; /* ← THIS ADDS SIDE GAP! */
-        width: auto; /* ← NOT 100%, so it shrinks! */
+        margin: 0 0.5rem;
+        width: auto;
     }
     
     .temp-section {
@@ -466,10 +487,16 @@ h1 {
     .detail-item label {
         font-size: 0.65rem;
     }
+    
+    .watermark {
+        font-size: 0.65rem;
+        bottom: 8px;
+        right: 10px;
+    }
 }
 
 /* ============================================
-   📱 SMALL PHONES
+   SMALL PHONES
    ============================================ */
 
 @media (max-width: 360px) {
@@ -501,7 +528,7 @@ h1 {
 }
 
 /* ============================================
-   💻 LAPTOP / DESKTOP
+   LAPTOP / DESKTOP
    ============================================ */
 
 @media (min-width: 481px) and (min-height: 700px) {
