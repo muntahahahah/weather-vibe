@@ -3,7 +3,7 @@
    ============================================ */
 
 :root {
-    --bg-image: url('/images/clear-day.jpg');
+    --bg-image: url('images/clear-day.jpg');
     --overlay: rgba(0, 0, 0, 0.2);
     --card-bg: rgba(255, 255, 255, 0.35);
     --card-border: rgba(255, 255, 255, 0.5);
